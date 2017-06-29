@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root_title"
+                style="@style/BaseTitleBar"
+                android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/btn_left"
+        style="@style/BaseTitleBar_Image"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_titlebar_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/btn_right"
+        android:layout_toRightOf="@+id/btn_left"
+        />
+
+    <ImageView
+        android:id="@+id/btn_right"
+        style="@style/BaseTitleBar_Image"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

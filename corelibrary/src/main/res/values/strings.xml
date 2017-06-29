@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CoreLibrary</string>
+    <string name="action_baseApi_error">Please call setBaseUrl set BaseURL () method!</string>
+    <string name="action_error_initNetWorkFactory">请初始化NetWorkFactory</string>
+
+    <string name="api_error_connect">网络连接错误</string>
+    <string name="api_error_json">数据解析错误</string>
+    <string name="api_error_state">状态错误</string>
+    <string name="api_read_cache">网络异常自动读取缓存</string>
+    <string name="api_ok_but_view_is_null">调用方的View为null</string>
+</resources>

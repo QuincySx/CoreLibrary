@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="BaseTitleBar">
+        <item name="android:layout_height">@dimen/BaseTitleBar_Hieght</item>
+    </style>
+
+    <style name="BaseTitleBar_Image">
+        <item name="android:layout_height">@dimen/BaseTitleBar_Hieght</item>
+        <item name="android:layout_width">@dimen/BaseTitleBar_Hieght</item>
+        <item name="android:padding">@dimen/BaseTitleBar_Image_Padding</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

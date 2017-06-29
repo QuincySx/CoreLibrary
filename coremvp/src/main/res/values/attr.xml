@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseTitleBar">
+        <attr name="backDrawable" format="reference"/>
+        <attr name="TitleText" format="string|reference"/>
+        <attr name="TitleShow" format="boolean"/>
+        <attr name="TitleTextColor" format="color"/>
+        <attr name="TitleTextSize" format="dimension"/>
+        <attr name="TitleTextGravity">
+            <flag name="bottom" value="0"/>
+            <flag name="center" value="1"/>
+            <flag name="center_horizontal" value="2"/>
+            <flag name="center_vertical" value="3"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="5"/>
+            <flag name="top" value="6"/>
+        </attr>
+        <attr name="BtnLeftShow" format="boolean"/>
+        <attr name="BtnLeftDrawable" format="reference"/>
+        <attr name="BtnRightShow" format="boolean"/>
+        <attr name="BtnRightDrawable" format="reference"/>
+    </declare-styleable>
+</resources>

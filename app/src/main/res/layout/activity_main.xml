@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="MainViewModel"
+            type="com.a21vianet.quincysx.corelibrarysample.main.MainViewModel"/>
+
+        <variable
+            name="MainPresenter"
+            type="com.a21vianet.quincysx.corelibrarysample.main.MainContract.Presenter"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.a21vianet.quincysx.corelibrary.mvp.widget.BaseTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:TitleText="你好"
+            app:TitleTextColor="#43e100"
+            app:TitleTextGravity="center"
+            app:TitleTextSize="20sp">
+
+        </com.a21vianet.quincysx.corelibrary.mvp.widget.BaseTitleBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{MainViewModel.mConentInfo.title}"/>
+
+        <Button
+            android:id="@+id/button_getlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{MainPresenter.onClick}"
+            android:text="List"
+            />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{MainPresenter.onClick}"
+            android:text="Error"
+            />
+
+        <Button
+            android:id="@+id/button_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{MainPresenter.onClick}"
+            android:text="Error"
+            />
+    </LinearLayout>
+</layout>
